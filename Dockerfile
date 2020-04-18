@@ -9,6 +9,9 @@ RUN git clone https://github.com/AlloyTools/org.alloytools.alloy.git
 
 WORKDIR /org.alloytools.alloy
 
+# To use a particular stable version of Alloy, choose it here
+# RUN git checkout v5.1.0
+
 RUN ./gradlew build
 
 # This works on Windows, and probably Mac, but you may need to override it.
